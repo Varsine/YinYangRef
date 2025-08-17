@@ -1,0 +1,10 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Headings (adjust sizes to match Figma)
+h1 { @include fluid-type(32, 56); line-height: 1.1; letter-spacing: -0.02em; font-family: $font-secondary; font-weight: 700; }
+h2 { @include fluid-type(28, 40); line-height: 1.15; font-family: $font-secondary; font-weight: 700; }
+h3 { @include fluid-type(22, 28); font-family: $font-secondary; font-weight: 600; }
+p  { font-size: rem(16); line-height: 1.6; color: $color-muted; font-family: $font-primary; }
+.small { font-size: rem(14); color: $black-56; }
+.caption { font-size: rem(12); color: $black-50; }

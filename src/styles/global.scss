@@ -1,0 +1,30 @@
+@use "variables";
+@use "mixins";
+@use "reset";
+@use "typography";
+@use "helpers";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@500;700&family=Sora:wght@400;600&display=swap');
+
+body {
+  font-family: variables.$font-primary;
+  background: variables.$color-surface;
+  color: variables.$color-text;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: variables.$color-bg;
+  color: variables.$color-text;
+}
+
+.container { @include mixins.container; }
+.btn {
+  display:inline-flex; align-items:center; gap: .5rem;
+  padding: .75rem 1rem; border-radius: .75rem; border:1px solid variables.$color-border;
+  background: variables.$color-primary; color:#fff; font-weight:700;
+  transition: transform .15s ease, box-shadow .2s ease;
+  &:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,.15); }
+}

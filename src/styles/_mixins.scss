@@ -1,0 +1,40 @@
+@use "variables" as *;
+
+// px->rem
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+
+// Breakpoints (from your spec)
+$bp-mobile: 375px;
+$bp-tablet: 1024px;
+$bp-desktop: 1440px;
+$bp-large: 1920px;
+
+@mixin respond-max($px) {
+  @media (max-width: #{$px}) { @content; }
+}
+
+@mixin respond-min($px) {
+  @media (min-width: #{$px}) { @content; }
+}
+
+// Container
+@mixin container {
+  width: min(100% - rem(32), $container-max);
+  margin-inline: auto;
+}
+
+// Card
+@mixin card {
+  background: $white;
+  border: 1px solid $color-border;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+// Fluid type
+@mixin fluid-type($min, $max, $vmin: 375px, $vmax: 1440px) {
+  font-size: clamp(rem($min), calc(#{$min}px + (#{$max - $min}) * ((100vw - #{$vmin}) / (#{$vmax - $vmin}))), rem($max));
+}

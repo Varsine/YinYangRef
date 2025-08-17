@@ -1,0 +1,13 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.card {
+  @include card;
+  padding: 20px;
+  display:grid; gap: 10px;
+  will-change: transform, box-shadow;
+  transition: transform .2s ease, box-shadow .2s ease;
+  &:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+}
+.title { font-weight: 700; font-family: $font-secondary; }
+.text { color: $color-muted; }

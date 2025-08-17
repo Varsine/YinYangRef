@@ -1,0 +1,67 @@
+// ===== Colors (from your spec) =====
+
+// Primary "azure" family
+$azure-46: #0077ED;
+$azure-45: #0071E3;
+$azure-40: #0066CC;
+$azure-50: #007AFF;
+$azure-58: #2997FF;
+$azure-48: #0090F7;
+
+// Neutrals
+$white: #FFFFFF;
+$black: #000000;
+
+// Grey scale
+$grey-96: #F5F5F7;
+$grey-98: #FAFAFC;
+$grey-83: #D2D2D7;
+$grey-80: #C8C8CE;
+$grey-16: #272729;
+$grey-15: #262626;
+$grey-12: #1D1D1F;
+$grey-8:  #141414;
+
+// Accent colors
+$magenta-61: #DE5BC0;
+$green-69:   #9ACB94;
+$red-3:      #0A0303;
+$red-60:     #F2416B;
+$violet-69:  #BA62FC;
+$orange-48:  #F55600;
+
+// Opacity helpers for black/white
+$black-88: rgba($black, .88);
+$black-80: rgba($black, .80);
+$black-72: rgba($black, .72);
+$black-56: rgba($black, .56);
+$black-50: rgba($black, .50);
+$black-48: rgba($black, .48);
+$black-42: rgba($black, .42);
+$black-40: rgba($black, .40);
+$black-16: rgba($black, .16);
+$black-4:  rgba($black, .04);
+$black-0:  rgba($black, 0);
+
+$white-80: rgba($white, .80);
+
+// Semantic tokens (tweak to match Figma)
+$color-bg: $white;
+$color-surface: $grey-98;
+$color-text: $black-88;
+$color-muted: $black-56;
+$color-primary: $azure-50;
+$color-border: $black-16;
+
+// Layout
+$container-max: 1440px; // desktop canvas width
+$grid-gap: 24px;
+
+// Typography
+$font-primary: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+$font-secondary: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+$font-alt: "Sora", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+// Scale (adjust per Figma text styles)
+$fs-100: 12px; $fs-200: 14px; $fs-300: 16px; $fs-400: 18px;
+$fs-500: 20px; $fs-600: 24px; $fs-700: 28px; $fs-800: 36px; $fs-900: 48px;

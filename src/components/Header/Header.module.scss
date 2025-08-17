@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.header {
+  @include container;
+  display:flex; align-items:center; justify-content:space-between;
+  padding-block: rem(20);
+  background: $white;
+  border-bottom: 1px solid $color-border;
+}
+
+.logo { font-weight:800; letter-spacing:-0.02em; font-family: $font-secondary; }
+.nav { display:flex; gap: rem(20); }
+.link { opacity:.9; transition:opacity .2s ease; &:hover{opacity:1;} }
